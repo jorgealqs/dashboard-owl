@@ -1,7 +1,7 @@
 const { xml } = owl;
 
 export const HeaderTemplate = xml`
-<header class="bg-gradient-to-r from-blue-100 via-white to-blue-100 fixed top-3 left-1/2 transform -translate-x-1/2 z-50 rounded-2xl max-w-none w-[98.8%] px-4 py-2 shadow-md">
+<header class="bg-gradient-to-r from-blue-100 via-white to-blue-100 fixed top-3 left-1/2 transform -translate-x-1/2 z-50 rounded-2xl max-w-none w-[98.8%] px-4 py-2">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <!-- Botón hamburguesa móvil con ícono dinámico -->
@@ -41,7 +41,7 @@ export const HeaderTemplate = xml`
         </div>
 
         <!-- Menú desplegable móvil -->
-        <div t-if="state.menuOpen" class="md:hidden absolute top-14 right-0 w-60 bg-white rounded-xl shadow-2xl p-6 flex flex-col items-center gap-6 z-50 animate-fade-down">
+        <div t-if="state.menuOpen" class="md:hidden mt-2 flex flex-col gap-2 text-sm font-medium text-gray-700">
             <a href="#" t-out="translations.home"></a>
             <a href="#" t-out="translations.dashboard"></a>
             <a href="#" t-out="translations.profile"></a>
