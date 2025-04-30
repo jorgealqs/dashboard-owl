@@ -41,7 +41,7 @@ export const HeaderTemplate = xml`
         </div>
 
         <!-- Menú desplegable móvil -->
-        <div t-if="state.menuOpen" class="md:hidden mt-2 flex flex-col gap-2 text-sm font-medium text-gray-700">
+        <div t-if="state.menuOpen" class="md:hidden mt-2 bg-white bg-opacity-95 rounded-xl shadow p-3 flex flex-col gap-2 text-sm font-medium text-gray-700">
             <a href="#" t-out="translations.home"></a>
             <a href="#" t-out="translations.dashboard"></a>
             <a href="#" t-out="translations.profile"></a>
