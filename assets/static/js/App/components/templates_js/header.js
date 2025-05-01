@@ -16,10 +16,10 @@ export const HeaderTemplate = xml`
 
             <!-- Navegación normal (pantallas grandes) -->
             <nav class="hidden md:flex gap-6 text-sm font-medium text-gray-700">
-                <a href="#" t-out="translations.home"></a>
-                <a href="#" t-out="translations.dashboard"></a>
+                <a href="#" t-on-click="onChangeMain" t-att-data-option="'home'" t-out="translations.home"></a>
+                <a href="#" t-on-click="onChangeMain" t-att-data-option="'dashboard'" t-out="translations.dashboard"></a>
                 <a href="#" t-out="translations.profile"></a>
-                <a href="#" t-out="translations.settings"></a>
+                <a href="#" t-out="translations.settings" t-on-click="onChangeMain" t-att-data-option="'settings'"></a>
                 <a href="#" t-out="translations.notifications"></a>
                 <a href="#" t-out="translations.logout"></a>
             </nav>
@@ -42,8 +42,8 @@ export const HeaderTemplate = xml`
 
         <!-- Menú desplegable móvil -->
         <div t-if="state.menuOpen" class="md:hidden mt-2 flex flex-col gap-2 text-sm font-medium text-gray-700">
-            <a href="#" t-out="translations.home"></a>
-            <a href="#" t-out="translations.dashboard"></a>
+            <a href="#" t-out="translations.home" t-on-click="onChangeMain" t-att-data-option="'home'"></a>
+            <a href="#" t-out="translations.dashboard" t-on-click="onChangeMain" t-att-data-option="'dashboard'"></a>
             <a href="#" t-out="translations.profile"></a>
             <a href="#" t-out="translations.settings"></a>
             <a href="#" t-out="translations.notifications"></a>

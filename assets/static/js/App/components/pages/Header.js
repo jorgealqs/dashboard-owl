@@ -2,6 +2,7 @@ const { Component, useState } = owl;
 
 import { HeaderTemplate } from "../templates_js/header.js";
 import { setLang } from "../../../../../../utils/lang.js";
+import { setSection } from "../../../../../../utils/sections.js";
 
 export class Header extends Component {
     static template = HeaderTemplate;
@@ -33,5 +34,11 @@ export class Header extends Component {
 
     toggleMenu() {
         this.state.menuOpen = !this.state.menuOpen;
+    }
+
+    onChangeMain(ev) {
+        const option = ev.currentTarget.dataset.option;
+        setSection(option)
+        this.env.langState.page = option;
     }
 }

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
 
 :root {
     --gradient-body: linear-gradient(to top, rgba(84, 135, 196, 0.3), rgba(255, 255, 255, 0.5), rgba(56, 110, 175, 0.3));
     --text-family-merriweather: 'Merriweather', 'Lora', 'Times New Roman', Georgia, serif;
+    --text-family-fira: 'Fira Code', 'Menlo', 'Courier';
+    --font-size: 15px;
 }
 
-
-body {
-    font-family: var(--text-family-merriweather);
+body, nav {
+    font-family: var(--text-family-fira);
+    font-size: var(--font-size);
 }
