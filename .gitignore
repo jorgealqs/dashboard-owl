@@ -1,0 +1,29 @@
+# .gitignore
+
+# Node modules (no se deben subir nunca)
+node_modules/
+
+# Archivos de configuración y dependencias que no son necesarios si compartes solo el sitio
+package-lock.json
+package.json
+tailwind.config.js
+postcss.config.js
+
+# Archivos de salida si usas una herramienta de build (como dist o build)
+dist/
+build/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores de texto
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Opcional: archivos de entrada Tailwind si generas uno final separado
+input.css
